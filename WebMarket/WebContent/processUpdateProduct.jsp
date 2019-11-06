@@ -5,13 +5,12 @@
 <%@ page import="java.sql.*"%>
 <%@ include file="dbconn.jsp"%>
 <%
-	String filename = "C:\\Users\\UESR\\eclipse-workspace\\WebMarket\\WebContent\\image";
+	String filename = "C:\\Users\\UESR\\git\\NewJSP\\WebMarket\\WebContent\\image";
 	int maxSize = 5 * 1024 * 1024;
 	String encType = "utf-8";
 
-	MultipartRequest multi = null;
-
-	multi = new MultipartRequest(request, filename, maxSize, encType, new DefaultFileRenamePolicy());
+	MultipartRequest multi = new MultipartRequest(request, filename, maxSize, encType,
+			new DefaultFileRenamePolicy());
 	String productId = multi.getParameter("productId");
 	String name = multi.getParameter("name");
 	String unitPrice = multi.getParameter("unitPrice");

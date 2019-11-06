@@ -5,7 +5,7 @@
 <%@ page import="dao.ProductRepository"%>
 
 <%
-	request.setCharacterEncoding("UTF-8");
+	request.setCharacterEncoding("utf-8");
 
 	String cartId = session.getId();
 

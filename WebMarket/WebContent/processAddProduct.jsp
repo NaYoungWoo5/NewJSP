@@ -9,7 +9,7 @@
 <%
 	request.setCharacterEncoding("utf-8");
 
-	String filename = "C:\\Users\\UESR\\eclipse-workspace\\WebMarket\\WebContent\\image";
+	String filename = "C:\\Users\\UESR\\git\\NewJSP\\WebMarket\\WebContent\\image";
 	int maxSize = 5 * 1024 * 1024;
 	String encType = "utf-8";
 
