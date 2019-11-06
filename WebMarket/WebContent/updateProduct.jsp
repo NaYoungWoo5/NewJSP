@@ -5,12 +5,11 @@
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <title>상품 수정</title>
 </head>
-<body>
+<body style="background-color: #000;">
 	<jsp:include page="Menu.jsp" />
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="display-3">상품 수정</h1>
-		</div>
+	<div class="container">
+		<h1 style="color: white" class="display-3">상품 수정</h1>
+		<hr color="red">
 	</div>
 	<%@ include file="dbconn.jsp"%>
 	<%
@@ -26,7 +25,7 @@
 		if (rs.next()) {
 	%>
 	<div class="container">
-		<div class="row">
+		<div style="color: white" class="row">
 			<div class="col-md-5">
 				<img src="./image/<%=rs.getString("p_fileName")%>" alt="image"
 					style="width: 100%" />

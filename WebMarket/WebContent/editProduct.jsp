@@ -16,12 +16,11 @@
 <%
 	String edit = request.getParameter("edit");
 %>
-<body>
+<body style="background-color: #000;">
 	<jsp:include page="Menu.jsp" />
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="display-3">상품 편집</h1>
-		</div>
+	<div class="container">
+		<h1 style="color: white" class="display-3">상품 편집</h1>
+		<hr color="red">
 	</div>
 	<div class="container">
 		<div class="row" align="center">
@@ -35,7 +34,7 @@
 				rs = pstmt.executeQuery();
 				while (rs.next()) {
 			%>
-			<div class="col-md-4">
+			<div style="color: white" class="col-md-4">
 
 				<img src="./image/<%=rs.getString("p_filename")%>"
 					style="width: 100%">
