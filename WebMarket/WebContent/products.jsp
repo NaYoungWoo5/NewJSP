@@ -38,6 +38,7 @@
 					<a href="./product.jsp?id=<%=rs.getString("p_id")%>"
 						class="btn btn-danger" role="button">영화 정보 &raquo;</a>
 			</div>
+
 			<%
 				}
 			%>
