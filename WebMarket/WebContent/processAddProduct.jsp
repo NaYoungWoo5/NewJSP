@@ -1,6 +1,4 @@
-<%@ page contentType="text/html; charset=utf-8"%>
-<%@ page import="dto.Product"%>
-<%@ page import="dao.ProductRepository"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <%@ page import="com.oreilly.servlet.*"%>
 <%@ page import="com.oreilly.servlet.multipart.*"%>
 <%@ page import="java.util.*"%>
@@ -8,10 +6,9 @@
 <%@ include file="dbconn.jsp"%>
 <%
 	request.setCharacterEncoding("utf-8");
-
 	String filename = "C:\\Users\\UESR\\git\\NewJSP\\WebMarket\\WebContent\\image";
-	int maxSize = 5 * 1024 * 1024;
-	String encType = "utf-8";
+	String encType = "utf-8"; //인코딩 타입
+	int maxSize = 5 * 1024 * 1024; //최대 업로드될 파일의 크기5Mb
 
 	MultipartRequest multi = new MultipartRequest(request, filename, maxSize, encType,
 			new DefaultFileRenamePolicy());
