@@ -10,7 +10,7 @@
 	String encType = "utf-8";
 
 	MultipartRequest multi = new MultipartRequest(request, filename, maxSize, encType,
-	new DefaultFileRenamePolicy());
+			new DefaultFileRenamePolicy());
 	String productId = multi.getParameter("productId");
 	String name = multi.getParameter("name");
 	String unitPrice = multi.getParameter("unitPrice");

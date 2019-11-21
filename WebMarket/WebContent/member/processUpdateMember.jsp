@@ -14,11 +14,11 @@
 	String name = request.getParameter("name");
 	String phone = request.getParameter("phone");
 
-	session.setAttribute("login.id", id);
-	session.setAttribute("login.password", password);
-	session.setAttribute("login.name", name);
-	session.setAttribute("login.phone", phone);
-
+	/* 	session.setAttribute("login.id", id);
+		session.setAttribute("login.password", password);
+		session.setAttribute("login.name", name);
+		session.setAttribute("login.phone", phone);
+	 */
 	out.println("id 는 " + id);
 	//트라이
 	try {
@@ -31,7 +31,7 @@
 		//                     틀리면 => 비밀번호틀림
 		//            없으면 id없음
 		out.println("next 는! " + rs.next() + " 이네시발 ");
-		if (rs.next()) {
+		if (rs.next() == false) {
 			//id있음
 			String dbPass = rs.getString("password");
 			if (password.equals(dbPass)) {
