@@ -27,7 +27,7 @@
 	<div class="container">
 		<div style="color: white" class="row">
 			<div class="col-md-7">
-				<form name="newProduct"
+				<form name="UpdateMember"
 					action="./processUpdateMember.jsp?id=<%=id%>"
 					class="form-horizontal" method="post">
 					<div class="form-group row">
@@ -62,6 +62,10 @@
 							<input type="submit" class="btn btn-primary" value="수정">
 						</div>
 					</div>
+				</form>
+				<form name="deleteMember" action="./deleteMember.jsp?id=<%=id%>"
+					class="form-horizontal" method="post">
+					<input type="submit" class="btn btn-danger" value="삭제">
 				</form>
 			</div>
 		</div>
