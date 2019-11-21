@@ -7,7 +7,7 @@
 <nav class="navbar navbar-expand navbar-dark"
 	style="background-color: #000;">
 	<div class="logo">
-		<a href="../products.jsp" style="margin-right: 100px"> <img
+		<a href="./products.jsp" style="margin-right: 100px"> <img
 			src="https://image.flaticon.com/icons/svg/870/870910.svg" width="50"
 			height="50">
 		</a>
@@ -48,8 +48,8 @@
 			</li>
 			<li class="nav-item"><a class="nav-link"
 				href="<c:url value="./member/logoutMember.jsp"/>">로그아웃</a></li>
-			<a href="./member/updateMember.jsp?id=<%=id%>"
-				class="btn btn-success" role="button">회원 수정 &raquo;</a>
+			<a href="./member/updateMember.jsp?id=<%=id%>" class="nav-link"
+				role="button">회원 수정 &raquo;</a>
 		</c:otherwise>
 	</c:choose>
 	<a href="./cart.jsp" class="btn btn-warning">장바구니 &raquo;</a>

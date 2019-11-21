@@ -9,20 +9,6 @@
 	String password = request.getParameter("password");
 	String name = request.getParameter("name");
 	String phone = request.getParameter("phone");
-	/*	String birth = request.getParameter("birth");
-		String email = request.getParameter("email");
-		String address = request.getParameter("address");
-		
-		if (name.isEmpty())
-			price = 0;
-		else
-			price = Integer.valueOf(name);
-		
-		if (address.isEmpty())
-			stock = 0;
-		else
-			stock = Long.valueOf(address);
-		 */
 	PreparedStatement pstmt = null;
 
 	String sql = "insert into member values(?,?,?,?)";
@@ -32,9 +18,6 @@
 	pstmt.setString(2, password);
 	pstmt.setString(3, name);
 	pstmt.setString(4, phone);
-	// 	pstmt.setString(5, birth);
-	// 	pstmt.setString(6, email);
-	// 	pstmt.setString(7, address);
 	pstmt.executeUpdate();
 
 	if (pstmt != null)

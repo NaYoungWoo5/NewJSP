@@ -39,31 +39,6 @@
 					<input type="tel" name="phone" class="form-control">
 				</div>
 			</div>
-			<!-- 				<div class="form-group row">
-					<label class="col-sm-2">성별</label>
-					<div class="col-sm-3">
-						<input type="radio" name="gender" value="Man"> 남자 <input
-							type="radio" name="gender" value="Girl"> 여자
-					</div>
-				</div>
-				<div class="form-group row">
-					<label class="col-sm-2">생일</label>
-					<div class="col-sm-3">
-						<input type="date" name="birth">
-					</div>
-				</div>
-				<div class="form-group row">
-					<label class="col-sm-2">이메일</label>
-					<div class="col-sm-3">
-						<input type="email" name="email">
-					</div>
-				</div>
-				<div class="form-group row">
-					<label class="col-sm-2">주소</label>
-					<div class="col-sm-5">
-						<textarea name="address" cols="50" rows="2" class="form-control"></textarea>
-					</div>
-				</div> -->
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-10">
 					<input type="submit" id="sum" class="btn btn-primary" value=등록>

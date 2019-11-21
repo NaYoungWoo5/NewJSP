@@ -6,9 +6,10 @@
 </head>
 <body style="background-color: #000;">
 	<jsp:include page="Menu.jsp" />
-		<div class="container">
-			<h2 style="color: white" class="alert alert-danger">요청하신 페이지를 찾을 수 없습니다.</h2>
-		</div>
+	<div class="container">
+		<h2 style="color: white" class="alert alert-danger">요청하신 페이지를 찾을
+			수 없습니다.</h2>
+	</div>
 	<hr color="red">
 	<div class="container">
 		<p><%=request.getRequestURL()%></p>

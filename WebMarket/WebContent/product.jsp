@@ -7,7 +7,7 @@
 <title>상품 상세 정보</title>
 <script type="text/javascript">
 	function addToCart() {
-		if (confirm("상품을 장바구니에 추가하시겠습니까?")) {
+		if (confirm("영화를 장바구니에 추가하시겠습니까?")) {
 			document.addForm.submit();
 		} else {
 			document.addForm.reset();
@@ -15,13 +15,12 @@
 	}
 </script>
 </head>
-<body>
+<body style="background-color: #000;">
 	<jsp:include page="Menu.jsp" />
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="display-3">상품 정보</h1>
-		</div>
+	<div class="container">
+		<h1 style="color: white" class="display-3">영화 정보</h1>
 	</div>
+	<hr color="red">
 	<%@ include file="dbconn.jsp"%>
 	<%
 		String productId = request.getParameter("id");
@@ -35,7 +34,7 @@
 		rs = pstmt.executeQuery();
 		if (rs.next()) {
 	%>
-	<div class="container">
+	<div style="color: white" class="container">
 		<div class="row">
 			<div class="col-md-5">
 				<img src="./image/<%=rs.getString("p_fileName")%>"
@@ -45,9 +44,9 @@
 				<h3><%=rs.getString("p_name")%></h3>
 				<p><%=rs.getString("p_description")%>
 				<p>
-					<b>상품 코드 : </b><span class="badge-danger"> <%=rs.getString("p_id")%></span>
+					<b>영화 코드 : </b><span class="badge-danger"> <%=rs.getString("p_id")%></span>
 				<p>
-					<b>제조사 : </b><%=rs.getString("p_manufacturer")%>
+					<b>제작사 : </b><%=rs.getString("p_manufacturer")%>
 				<p>
 					<b>분류 : </b>
 					<%=rs.getString("p_category")%>
@@ -59,9 +58,9 @@
 				<p>
 				<form name="addForm"
 					action="./addCart.jsp?id=<%=rs.getString("p_id")%>" method="post">
-					<a href="./products.jsp" class="btn btn-success">상품 목록 &raquo;</a><a
-						href="products.jsp" class="btn btn-warning" onclick="addToCart()">상품
-						사기 &raquo;</a> <a href="./cart.jsp" class="btn btn-warning">장바구니&raquo;</a>
+					<a href="./products.jsp" class="btn btn-success">영화 목록 &raquo;</a>
+					<a href="./products.jsp" class="btn btn-danger"
+						onclick="addToCart()">영화 구매 &raquo;</a>
 				</form>
 			</div>
 		</div>

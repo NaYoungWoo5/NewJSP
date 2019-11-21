@@ -2,7 +2,7 @@
 <%@ page import="java.sql.*"%>
 <html>
 <head>
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
 <title>회원 수정</title>
 </head>
 <body style="background-color: #000;">
@@ -27,13 +27,13 @@
 	<div class="container">
 		<div style="color: white" class="row">
 			<div class="col-md-7">
-				<form name="newProduct" action="processUpdateMember.jsp"
-					class="form-horizontal" method="post" enctype="multipart/form-data">
+				<form name="newProduct"
+					action="./processUpdateMember.jsp?id=<%=id%>"
+					class="form-horizontal" method="post">
 					<div class="form-group row">
 						<label class="col-sm-2">아이디</label>
 						<div class="col-sm-3">
-							<input type="text" id="id" name="id" class="form-control"
-								value='<%=rs.getString("id")%>'>
+							<%=rs.getString("id")%>
 						</div>
 					</div>
 					<div class="form-group row">
