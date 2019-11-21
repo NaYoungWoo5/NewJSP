@@ -9,8 +9,7 @@
 		<web-resource-collection>
 			<web-resource-name>WebMarket</web-resource-name>
 			<description></description>
-			<url-pattern>/addProduct.jsp</url-pattern>
-			<url-pattern>/editProduct.jsp</url-pattern>
+			<!-- <url-pattern>/addProduct.jsp</url-pattern> <url-pattern>/editProduct.jsp</url-pattern> -->
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>
@@ -20,7 +19,7 @@
 	<login-config>
 		<auth-method>FORM</auth-method>
 		<form-login-config>
-			<form-login-page>/login.jsp</form-login-page>
+			<form-login-page>/member/loginMember.jsp</form-login-page>
 			<form-error-page>/login_failed.jsp</form-error-page>
 		</form-login-config>
 	</login-config>

@@ -2,7 +2,7 @@
 <%@ page import="java.util.*"%>
 <%@ page import="java.sql.*"%>
 <%@ include file="../dbconn.jsp"%>
-
+<link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
 
 <%
 	request.setCharacterEncoding("utf-8");
