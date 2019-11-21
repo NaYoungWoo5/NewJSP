@@ -5,6 +5,13 @@
 <head>
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <title>NET</title>
+<style>
+a {
+	text-decoration: none;
+	color: #000000
+}
+</style>
+
 </head>
 <body style="background-color: #000;">
 	<jsp:include page="Menu.jsp" />
@@ -52,11 +59,12 @@
 			%>
 		</div>
 		<hr color="red">
-		<div class="add">
+		<div class="Cheat">
 			<p>
-				<a onMouseUp=window.open href="addProduct.jsp">
-					<button type="button" class="btn btn-link">영화 등록</button>
-				</a>
+				Cheat <a onMouseUp=window.open href="addProduct.jsp">영화 등록 </a> <a
+					onMouseUp=window.open href="editProduct.jsp?edit=update"> 영화 수정
+				</a> <a onMouseUp=window.open href="editProduct.jsp?edit=delete"> 영화
+					삭제 </a> <a onMouseUp=window.open href="cart.jsp"> 장바구니 </a>
 		</div>
 	</div>
 	<jsp:include page="Footer.jsp" />
