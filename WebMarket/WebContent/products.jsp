@@ -36,8 +36,11 @@ a {
 				while (rs.next()) {
 			%>
 			<div class="col-md-4">
-				<img src="./image/<%=rs.getString("p_fileName")%>"
+				<a
+					href="http://localhost:8080/WebMarket/image/<%=rs.getString("p_fileName")%>">
+					<img src="./image/<%=rs.getString("p_fileName")%>"
 					style="width: 100%">
+				</a>
 				<h3 style="color: white"><%=rs.getString("p_name")%></h3>
 				<p style="color: white"><%=rs.getString("p_description")%>
 				<p style="color: white"><%=rs.getString("p_UnitPrice")%>원
