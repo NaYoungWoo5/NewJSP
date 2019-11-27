@@ -42,7 +42,7 @@ a {
 				<p style="color: white"><%=rs.getString("p_description")%>
 				<p style="color: white"><%=rs.getString("p_UnitPrice")%>원
 				<p>
-					<a href="./product.jsp?id=<%=rs.getString("p_id")%>"
+					<a href="./product.jsp?p_name=<%=rs.getString("p_name")%>"
 						class="btn btn-danger" role="button">영화 정보 &raquo;</a>
 			</div>
 

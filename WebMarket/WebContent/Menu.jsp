@@ -5,6 +5,7 @@
 <%@ include file="./dbconn.jsp"%>
 <%
 	String id = (String) session.getAttribute("id");
+	String p_name = (String) session.getAttribute("p_name");
 %>
 <nav class="navbar navbar-expand navbar-dark"
 	style="background-color: #000;">
@@ -21,10 +22,10 @@
 			href="<c:url value ="/BoardListAction.do?pageNum=1"/>">게시판</a></li>
 	</ul>
 	<ul class="navbar-nav mr-auto">
-		<form class="form-inline my-2 my-lg-0" action="search.jsp"
+		<form class="form-inline my-2 my-lg-0" action="./search/search.jsp"
 			method="post">
-			<input class="form-control mr-sm-2" type="search"
-				placeholder="영화를 검색해 보세요." aria-label="Search" name="search">
+			<input type="text" class="form-control mr-sm-2"
+				placeholder="영화 제목을 검색하세요." name='p_name' required autofocus>
 			<button class="btn btn-danger" type="submit" onclick="search()">검색</button>
 		</form>
 	</ul>
