@@ -48,7 +48,7 @@ a {
 					<a href="./product.jsp?p_name=<%=rs.getString("p_name")%>"
 						class="btn btn-danger" role="button">영화 정보 &raquo;</a>
 			</div>
-
+			
 			<%
 				}
 			%>

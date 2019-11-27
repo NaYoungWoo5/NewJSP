@@ -8,7 +8,7 @@ public class BoardDTO {
 	private String content;
 	private String regist_day;
 	private int hit;
-privaet String ip;
+	private String ip;
 
 	public BoardDTO() {
 		super();
