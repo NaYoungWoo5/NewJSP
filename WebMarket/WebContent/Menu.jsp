@@ -18,8 +18,6 @@
 	<ul class="navbar-nav mr-auto">
 		<li class="nav-item"><a class="nav-link"
 			href="<c:url value = "/products.jsp"/>">영화 목록</a></li>
-		<li class="nav-item"><a class="nav-link"
-			href="<c:url value ="/BoardListAction.do?pageNum=1"/>">게시판</a></li>
 	</ul>
 	<ul class="navbar-nav mr-auto">
 		<form class="form-inline my-2 my-lg-0" action="./search/search.jsp"
@@ -42,6 +40,8 @@
 			<c:otherwise>
 				<li style="color: white">[<%=id%>님]
 				</li>
+				<li class="nav-item"><a class="nav-link"
+					href="<c:url value ="/BoardListAction.do?pageNum=1"/>">게시판</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="<c:url value = "/addProduct.jsp"/>">영화 등록</a></li>
 				<li class="nav-item"><a class="nav-link"

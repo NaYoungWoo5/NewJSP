@@ -4,14 +4,13 @@
 <link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
 <title>회원 가입</title>
 </head>
-<body>
+<body style="background-color: #000;">
 	<jsp:include page="/Menu.jsp" />
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="display-3">회원 가입</h1>
-		</div>
-	</div>
 	<div class="container">
+		<h1 class="display-3" style="color: white">회원 가입</h1>
+	</div>
+	<hr color="red">
+	<div class="container" style="color: white">
 		<form name="newMember" action="./processAddMember.jsp"
 			class="form-horizontal" method="post">
 			<div class="form-group row">
