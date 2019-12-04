@@ -47,9 +47,10 @@
 					href="<c:url value = "/editProduct.jsp?edit=delete"/>">영화 삭제</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="<c:url value="./member/logoutMember.jsp"/>">로그아웃</a></li>
-				<a href="./member/updateMember.jsp?id=<%=id%>" class="nav-link"
-					role="button">회원 수정 &raquo;</a>
-				<a href="./cart.jsp" class="btn btn-warning">장바구니 &raquo;</a>
+				<li class="nav-item"><a class="nav-link"
+					href="./member/updateMember.jsp?id=<%=id%>">회원 수정 </a></li>
+				<li class="nav-item"><a class="nav-link" href="./cart.jsp">장바구니
+						&raquo;</a></li>
 			</c:otherwise>
 		</c:choose>
 	</ul>
