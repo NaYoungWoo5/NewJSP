@@ -48,17 +48,17 @@ a {
 					<a href="./product.jsp?p_name=<%=rs.getString("p_name")%>"
 						class="btn btn-danger" role="button">영화 정보 &raquo;</a>
 			</div>
-			
+
 			<%
 				}
 			%>
 			<%
 				if (rs != null)
-					rs.close();
-				if (pstmt != null)
-					pstmt.close();
-				if (conn != null)
-					conn.close();
+						rs.close();
+					if (pstmt != null)
+						pstmt.close();
+					if (conn != null)
+						conn.close();
 			%>
 		</div>
 		<hr color="red">

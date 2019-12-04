@@ -5,15 +5,12 @@
 <%@ include file="./dbconn.jsp"%>
 <%
 	String id = (String) session.getAttribute("id");
-	String p_name = (String) session.getAttribute("p_name");
 %>
 <nav class="navbar navbar-expand navbar-dark"
 	style="background-color: #000;">
 	<ul class="navbar-nav mr-auto">
-		<a href="./products.jsp"> <img
-			src="https://image.flaticon.com/icons/svg/870/870910.svg" width="50"
-			height="50">
-		</a>
+		<img src="https://image.flaticon.com/icons/svg/870/870910.svg"
+			width="50" height="50">
 	</ul>
 	<ul class="navbar-nav mr-auto">
 		<li class="nav-item"><a class="nav-link"
@@ -41,7 +38,7 @@
 				<li style="color: white">[<%=id%>님]
 				</li>
 				<li class="nav-item"><a class="nav-link"
-					href="<c:url value ="/BoardListAction.do?pageNum=1"/>">게시판</a></li>
+					href="<c:url value="/BoardListAction.do?pageNum=1"/>">게시판</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="<c:url value = "/addProduct.jsp"/>">영화 등록</a></li>
 				<li class="nav-item"><a class="nav-link"
@@ -52,9 +49,9 @@
 					href="<c:url value="./member/logoutMember.jsp"/>">로그아웃</a></li>
 				<a href="./member/updateMember.jsp?id=<%=id%>" class="nav-link"
 					role="button">회원 수정 &raquo;</a>
+				<a href="./cart.jsp" class="btn btn-warning">장바구니 &raquo;</a>
 			</c:otherwise>
 		</c:choose>
 	</ul>
-	<a href="./cart.jsp" class="btn btn-warning">장바구니 &raquo;</a>
 </nav>
 <hr color="red">
