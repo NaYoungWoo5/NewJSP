@@ -23,12 +23,10 @@
 	}
 </script>
 </head>
-<body>
+<body style="background-color: #000;">
 	<jsp:include page="../Menu.jsp" />
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="display-3">게시판</h1>
-		</div>
+	<div class="container">
+		<span style="color: white" class="display-3">게시판</span>
 	</div>
 	<div class="container">
 		<form action="<c:url value="./BoardListAction.do"/>" method="post">
@@ -40,7 +38,7 @@
 			</div>
 			<div style="padding-top: 50px">
 				<table class="table table-hover">
-					<tr>
+					<tr style="color: white">
 						<th>번호</th>
 						<th>제목</th>
 						<th>작성일</th>
@@ -51,7 +49,7 @@
 						for (int j = 0; j < boardList.size(); j++) {
 							BoardDTO notice = (BoardDTO) boardList.get(j);
 					%>
-					<tr>
+					<tr style="color: white">
 						<td><%=notice.getNum()%></td>
 						<td><a
 							href="./BoardViewAction.do?num=<%=notice.getNum()%>&pageNum=<%=pageNum%>"><%=notice.getSubject()%></a></td>
