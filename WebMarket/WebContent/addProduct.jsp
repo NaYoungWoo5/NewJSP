@@ -24,11 +24,9 @@ css/bootstrap.min.css">
 		<hr color="pink">
 		<div class="container" style="color: white;">
 			<div class="text-right">
-				<a href="?language=ko">ko</a> || <a href="?language=en">en</a>
 				<p>
-					<a href="logout.jsp">
-						<button type="button" class="text-right">로그아웃</button>
-					</a>
+					<a href="?language=ko">ko</a> || <a href="?language=en">en</a>
+				</p>
 			</div>
 			<form name="newProduct" action="./processAddProduct.jsp"
 				class="form-horizontal" method="post" enctype="multipart/form-data">
