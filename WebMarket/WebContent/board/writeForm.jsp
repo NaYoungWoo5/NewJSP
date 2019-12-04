@@ -10,10 +10,6 @@
 </head>
 <script type="text/javascript">
 	function checkForm() {
-		if (!document.newWrite.name.value) {
-			alert("성명을 입력하세요.");
-			return false;
-		}
 		if (!document.newWrite.subject.value) {
 			alert("제목을 입력하세요.");
 			return false;
@@ -41,7 +37,8 @@
 			<div class="form-group row">
 				<label class="col-sm-2 control-label">성명</label>
 				<div class="col-sm-3">
-					<input name="name" type="text" class="form-control"
+					<%=name%>
+					<input name="name" type="hidden" class="form-control"
 						value="<%=name%>" placeholder="name">
 				</div>
 			</div>
