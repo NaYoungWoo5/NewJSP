@@ -19,7 +19,7 @@
 			alert("로그인 해주세요.");
 			return false;
 		}
-		location.href = "./BoardWriteForm.do?id=<%=sessionId%>"
+		location.href = "./BoardWriteForm.do?id=<%=sessionId%>
 	}
 </script>
 </head>
@@ -27,6 +27,7 @@
 	<jsp:include page="../Menu.jsp" />
 	<div class="container">
 		<span style="color: white" class="display-3">게시판</span>
+		<hr color="red">
 	</div>
 	<div class="container">
 		<form action="<c:url value="./BoardListAction.do"/>" method="post">

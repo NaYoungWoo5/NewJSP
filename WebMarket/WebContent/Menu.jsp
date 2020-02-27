@@ -26,7 +26,7 @@
 	</ul>
 	<ul class="navbar-nav mr-auto">
 		<c:choose>
-			<c:when test="${empty sessionId }">
+			<c:when test="${empty sessionId}">
 				<li class="nav-item"><a class="nav-link"
 					href="<c:url
 						value="./member/loginMember.jsp"/>">로그인</a></li>

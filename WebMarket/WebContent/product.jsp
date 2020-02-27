@@ -53,6 +53,7 @@
 				<p>
 					<b>재고 수 : </b>
 					<%=rs.getLong("p_unitsInStock")%>
+				
 				<h4><%=rs.getString("p_UnitPrice")%>원
 				</h4>
 				<p>
